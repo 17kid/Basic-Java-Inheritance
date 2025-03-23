@@ -2,6 +2,7 @@
 import java.util.ArrayList;
 
 public class TestStudent {
+
     public static void main(String[] args) {
         System.out.println("TESTING STUDENT CLASS");
 
@@ -15,10 +16,10 @@ public class TestStudent {
 
         s1.display();
 
-        // System.out.println("Credits: " + s1.getCredits());
-        // System.out.println("GPA: " + s1.getGpa());
-        // System.out.println("Major: " + s1.getMajor());
-        // System.out.println("Transfer Student: " + s1.getTransfer());
+        System.out.println("Credits: " + s1.getCredits());
+        System.out.println("GPA: " + s1.getGpa());
+        System.out.println("Major: " + s1.getMajor());
+        System.out.println("Transfer Student: " + s1.getTransfer());
 
         System.out.println("Making a few adjustments...");
 
@@ -30,7 +31,7 @@ public class TestStudent {
         System.out.println("Major: " + s1.getMajor());
         System.out.println("GPA: " + s1.getGpa());
 
-        if(s1.dropCourse("Python")){
+        if (s1.dropCourse("Python")) {
             System.out.println("The course Python has been dropped!");
         } else {
             System.out.println("The course Python has NOT been dropped!");
@@ -38,11 +39,9 @@ public class TestStudent {
 
         ArrayList<String> enrolledCourses = s1.getEnrolledCourses();
         System.out.println("The student: " + s1.getFirstName() + " is enrolled in the following courses: ");
-        for (String course: enrolledCourses) {
+        for (String course : enrolledCourses) {
             System.out.println(course);
         }
-
-
 
     }
 }
